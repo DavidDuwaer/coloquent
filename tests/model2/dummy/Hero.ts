@@ -20,7 +20,7 @@ export class Hero extends BaseModel {
 
     public friends(): ToManyRelation
     {
-        return this.hasMany(Hero);
+        return this.hasMany(Hero, 'friends');
     }
 
     public foes(): ToManyRelation
